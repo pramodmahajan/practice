@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------
+    [Shop Related v1]
+------------------------------------------------------------------*/
+
+.sh-related-v1 {
+	padding: 10px;
+	@include clearfix;
+	
+	.sh-related-v1-col {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.sh-related-v1-img {
+		@include size(150px, auto);
+	}
+
+	.sh-related-v1-img-sm {
+		@include size(100px, auto);
+	}
+
+	.sh-related-v1-category {
+		color: $color-subtitle;
+		text-decoration: none;
+
+		&:hover {
+			color: $color-gold;
+		}
+	}
+}

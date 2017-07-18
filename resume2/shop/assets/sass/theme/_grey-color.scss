@@ -1,0 +1,461 @@
+/*
+    [Grey Color Theme]
+
+    CSS Color: #9e9e9e;
+    CSS Color Light: #f1f1f1;
+
+    Sass Color: $color-grey;
+    Sass Color Light: $color-grey-light;
+*/
+
+/*------------------------------------------------------------------
+    [Shop Wrap Border]
+------------------------------------------------------------------*/
+
+.sh-wrap-brd {
+    &:after {
+        border-color: $color-grey;
+    }
+}
+
+
+/*--------------------------------------------------
+    [Shop Accordion]
+----------------------------------------------------*/
+
+.sh-accordion {
+    .panel-title {
+        > a {
+            &:focus,
+            &:hover {
+                color: $color-grey;
+
+                &:after {
+                    color: $color-grey;
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Video]
+------------------------------------------------------------------*/
+
+.sh-video {
+    &:hover {
+        .sh-video-play-icon {
+            color: $color-grey;
+        }
+    }
+}
+
+
+/*--------------------------------------------------
+    [Shop Tab]
+----------------------------------------------------*/
+
+.sh-tab {
+    .nav-tabs {
+        > li {
+            &:hover {
+                > a {
+                    color: $color-grey;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $color-grey;
+                    border-color: $color-grey;
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Form]
+------------------------------------------------------------------*/
+
+.sh-form-input {
+    color: $color-grey;
+    @include placeholder($color-grey);
+}
+
+/* Shop Form v2 */
+.sh-form-v2 {
+    .sh-form-v2-input {
+        color: $color-grey;
+        @include placeholder($color-grey);
+    }
+
+    .sh-form-v2-btn {
+        color: $color-grey;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Heading v1]
+------------------------------------------------------------------*/
+
+.sh-heading-v1 {
+    .sh-heading-v1-subtitle {
+        color: $color-grey;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Sidebar List]
+------------------------------------------------------------------*/
+
+.sh-sidebar-list {
+    .sh-sidebar-list-link {
+        &:hover {
+            &:after {
+                color: $color-grey;
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Related v1]
+------------------------------------------------------------------*/
+
+.sh-related-v1 {
+    .sh-related-v1-category {
+        &:hover {
+            color: $color-grey;
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Info Block]
+------------------------------------------------------------------*/
+
+.sh-info-block {
+    &:before {
+        border-top-color: $color-grey;
+        border-bottom-color: $color-grey;
+    }
+
+    &:after {
+        border-left-color: $color-grey;
+        border-right-color: $color-grey;
+    }
+
+    .sh-info-icon {
+        color: $color-grey;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop News v1]
+------------------------------------------------------------------*/
+
+.sh-news-v1 {
+    &:before {
+        border-top-color: $color-grey;
+        border-bottom-color: $color-grey;
+    }
+
+    &:after {
+        border-left-color: $color-grey;
+        border-right-color: $color-grey;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Delivery]
+------------------------------------------------------------------*/
+
+.sh-delivery {
+    .sh-delivery-no,
+    .sh-delivery-title {
+        color: $color-grey;
+    }
+
+    &:hover,
+    &:focus {
+        background: $color-grey;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Clients v1]
+------------------------------------------------------------------*/
+
+.sh-clients-v1 {
+    &:after {
+        @include bg-opacity($color-grey, 0);
+    }
+
+    &:hover {
+        &:after {
+            @include bg-opacity($color-grey, .95);
+        }
+    }
+}
+
+
+/*--------------------------------------------------
+    [Shop Payment Method]
+----------------------------------------------------*/
+
+.sh-checkout-payment {
+    &.is-active {
+        .sh-checkout-payment-method {
+            color: $color-grey;
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Category v1]
+------------------------------------------------------------------*/
+
+.sh-category-v1 {
+    .sh-category-link {
+        border-bottom-color: $color-grey;
+    }
+}
+
+
+/*--------------------------------------------------
+    [Range Slider]
+----------------------------------------------------*/
+
+.slider {
+    .slider-selection {
+        background: $color-grey;
+    }
+    .slider-handle {
+        background: $color-grey;
+    }
+}
+
+/* Tooltip */
+.slider {
+    .tooltip-inner {
+        background: $color-grey;
+    }
+
+    .tooltip {
+        &.top {
+            .tooltip-arrow {
+                border-top-color: $color-grey;
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Newsletter Form]
+------------------------------------------------------------------*/
+
+.newsletter-popup {
+    .newsletter-popup-close-btn-icon {
+        &:hover {
+            color: $color-grey;
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Product v1]
+------------------------------------------------------------------*/
+
+.sh-product-v1 {
+    .sh-product-v1-price {
+        color: $color-grey;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Point]
+------------------------------------------------------------------*/
+
+.sh-point {
+    .sh-point-single > a {
+        background: $color-grey;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Header]
+------------------------------------------------------------------*/
+
+/* Navbar Toggle */
+.sh-header {
+    .navbar-toggle {
+        &:hover {
+            .toggle-icon {
+                background: $color-grey;
+
+                &:before,
+                &:after {
+                    background: $color-grey;
+                }
+            }
+        }
+    }
+}
+
+.sidebar-trigger-shop-label {
+    background: $color-grey;
+}
+
+/* Navbar Nav */
+.sh-header {
+    .navbar-nav {
+        .nav-item-child {
+            &.active {
+                color: $color-grey;
+
+                &:hover {
+                    color: $color-grey;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                color: $color-grey;
+            }
+        }
+    }
+}
+
+/* Dropdown Menu */
+.sh-header {
+    .dropdown-menu {
+        .dropdown-menu-item {
+            .dropdown-menu-item-child {
+                &.active {
+                    color: $color-grey;
+
+                    &:hover {
+                        color: $color-grey;
+                    }
+                }
+
+                &:hover {
+                    background: $color-grey;
+                }
+            }
+
+            &.active {
+                .dropdown-menu-item-child {
+                    color: $color-grey;
+                }
+            }
+        }
+    }
+}
+
+/* Dropdown Submenu */
+.sh-header {
+    .dropdown-submenu {
+        &:hover {
+            .dropdown-submenu-child {
+                color: $color-grey;
+            }
+        }
+
+        .dropdown-submenu-child {
+            &.active {
+                color: $color-grey;
+
+                &:hover {
+                    color: $color-grey;
+
+                    &:after {
+                        color: $color-grey;
+                    }
+                }
+            }
+
+            &:hover {
+                background: $color-grey;
+            }
+        }
+
+        &.active {
+            .dropdown-submenu-child {
+                color: $color-grey;
+
+                &:hover {
+                    color: $color-grey;
+                }
+            }
+        }
+    }
+}
+
+/* Mega Menu */
+.sh-header {
+    .mega-menu-list {
+        .mega-menu-child {
+            &.active {
+                color: $color-grey;
+
+                &:hover {
+                    color: $color-grey;
+                }
+            }
+
+            &:hover {
+                background: $color-grey;
+            }
+        }
+    }
+}
+
+/* Media Queries below 991px */
+@media (max-width: $screen-sm-max) {
+    /* Navbar Nav */
+    .sh-header {
+        .navbar-nav {
+            .nav-item-bg {
+                .nav-item-child {
+                    background: $color-grey;
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries below 991px */
+@media (min-width: $screen-sm-max) {
+    /* Navbar */
+    .sh-header {
+        .navbar-nav {
+            .nav-item {
+                .dropdown-menu {
+                    border-top-color: $color-grey;
+                }
+            }
+
+            .nav-item-bg {
+                .nav-item-child {
+                    background: $color-grey;
+                }
+            }
+        }
+    }
+}

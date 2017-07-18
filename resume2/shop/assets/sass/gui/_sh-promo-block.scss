@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------
+    [Shop Promo Block v1]
+------------------------------------------------------------------*/
+
+.sh-promo-block-v1 {
+	position: relative;
+	overflow: hidden;
+
+	&.sh-promo-block-v1-bg-img-v1 {
+		background: url(../../shop/assets/img/1920x1080/10.jpg) no-repeat;
+	    background-size: cover;
+	    background-position: center center;
+	}
+
+	.sh-promo-block-v1-img-wrap {
+		position: relative;
+		height: 390px;
+	}
+	
+	.sh-promo-block-v1-img-one {
+		@include position(absolute, $bottom: 0, $right: 0);
+	}
+
+	.sh-promo-block-v1-img-two {
+		@include position(absolute, $bottom: 0, $right: 0);
+	}
+}
+
+/* Media Queries below 768px */
+@media (max-width: $screen-sm-min) {
+	/* Image Wrap */
+	.sh-promo-block-v1 {
+		.sh-promo-block-v1-img-wrap {
+			height: 100%;
+		}
+		
+		.sh-promo-block-v1-img-one {
+			@include position(inherit);
+		}
+	}
+}

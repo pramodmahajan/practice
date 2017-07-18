@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------
+    [Shop Grid]
+------------------------------------------------------------------*/
+
+.sh-grid {
+	position: relative;
+	padding: 30px;
+
+	.sh-grid-img-wrap {
+		position: relative;
+		height: 150px;
+	}
+
+	.sh-grid-img-lb {
+		@include position(absolute, $bottom: -30px, $left: -30px);
+	}
+
+	.sh-grid-img-rb {
+		@include position(absolute, $bottom: -30px, $right: -30px);
+	}
+
+	.sh-grid-img-b {
+		@include position(absolute, $bottom: -30px);
+	}
+}

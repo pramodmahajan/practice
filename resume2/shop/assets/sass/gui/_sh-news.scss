@@ -1,0 +1,50 @@
+/*------------------------------------------------------------------
+    [Shop News v1]
+------------------------------------------------------------------*/
+
+.sh-news-v1 {
+	position: relative;
+	height: 370px;
+	background: $color-white;
+	padding: 40px;
+
+	&:before,
+    &:after {
+        @include position(absolute, $top: 10px, $left: 10px, $right: 10px, $bottom: 10px);
+        z-index: 2;
+        content: " ";
+        @include cubic-transition($delay: 0, $duration: 600ms, $property: (all));
+    }
+
+    &:before {
+        border-top: 1px solid $color-gold;
+        border-bottom: 1px solid $color-gold;
+        @include transform-scale(0, 1);
+    }
+
+    &:after {
+        border-left: 1px solid $color-gold;
+        border-right: 1px solid $color-gold;
+        @include transform-scale(1, 0);
+    }
+
+	.sh-news-v1-title {
+		@include font($size: $font-size-28);
+		line-height: 1.2;
+		margin-bottom: 25px;
+	}
+
+	.sh-news-v1-date {
+		@include font($size: $font-size-36, $family: $font-family-dancing);
+		text-decoration: none;
+	}
+
+	&:hover {
+		&:before,
+        &:after {
+            opacity: 1;
+            @include transform-scale(1, 1);
+            @include cubic-transition($delay: 0, $duration: 600ms, $property: (all));
+        }
+	}
+}

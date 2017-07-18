@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
     <style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
     </style>
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
     <div id="map"></div>
     <script>
+
       function initMap() {
-        var uluru = {lat:17.4133442, lng: 78.363237};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: uluru
-        });
         var myLatLng = {lat:17.4133442, lng: 78.363237};
-             var marker = new google.maps.Marker({
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
-          title: 'Hello World!'
+          title: 'Betalectic'
         });
-        // var marker = new google.maps.Marker({
-        //   position: uluru,
-        //   map: map
-        // });
-         var TILE_SIZE = 256;
-
-            function createInfoWindowContent(latLng, zoom) {
-                var scale = 1 << zoom;
-
-                var worldCoordinate = project(latLng);
-
-                var pixelCoordinate = new google.maps.Point(
-                    Math.floor(worldCoordinate.x * scale),
-                    Math.floor(worldCoordinate.y * scale));
-
-                var tileCoordinate = new google.maps.Point(
-                    Math.floor(worldCoordinate.x * scale / TILE_SIZE),
-                    Math.floor(worldCoordinate.y * scale / TILE_SIZE));
-
-                return [
-                    'Betalectic IT Projects Pvt Ltd'
-                ].join('<br>');
-            }
-
       }
     </script>
-    <script async defer
+   
+ <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm5l1bzPr7VqZQzWGFkp-W2irYZ_wXiNw&callback=initMap">
     </script>
-    <script type="text/javascript" src="animation.js"></script>
 
+<script type="text/javascript" src="animation.js"></script>
+
+ 
   </body>
 </html>

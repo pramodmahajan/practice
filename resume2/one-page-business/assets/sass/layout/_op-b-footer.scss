@@ -1,0 +1,71 @@
+/*--------------------------------------------------
+    [Footer One Page Business]
+----------------------------------------------------*/
+
+.footer-op-b {
+	.footer-op-b-logo-img {
+		@include size(100px, auto);
+	}
+
+	.footer-op-b-list {
+    	border-bottom: 1px solid rgba(255,255,255,.2);
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+
+        &.footer-op-b-list-last {
+        	border-bottom: none;
+        	padding-bottom: 0;
+        	margin-bottom: 0;
+        }
+    }
+
+    .footer-op-b-list-bottom {
+    	@include position(absolute, $bottom: 40px, $left: 60px);
+
+    	.footer-op-b-list-bottom-text {
+    		@include font($size: $font-size-13);
+	    	color: $color-white;
+	    	opacity: .5;
+	    	margin-bottom: 0;
+    	}
+    }
+
+    .footer-op-b-title {
+        @include font($size: $font-size-36);
+    }
+
+    .footer-op-b-subtitle {
+        @include font($size: $font-size-22);
+        color: $color-white;
+        margin-bottom: 10px;
+    }
+
+    .footer-op-b-list-text,
+    .footer-op-b-list-link {
+        @include font($size: $font-size-16);
+    	color: $color-white;
+    	opacity: .7;
+    	margin-bottom: 0;
+    }
+
+    .footer-op-b-list-link {
+    	border-bottom: 1px solid $color-white;
+    	text-decoration: none;
+    	padding-bottom: 3px;
+
+    	&:hover {
+    		opacity: 1;
+    	}
+    }
+
+    .footer-op-b-form {
+    	min-height: 48px;
+    	background: $color-sky-light;
+    	border: none;
+    	padding: 6px 20px;
+
+    	&:focus {
+    		box-shadow: 4px 4px 4px 2px lighten($color-tint-light, 2%);
+    	}
+    }
+}

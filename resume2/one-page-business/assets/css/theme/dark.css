@@ -1,0 +1,193 @@
+/*--------------------------------------------------
+    [Dark Theme]
+----------------------------------------------------*/
+
+/* Read More */
+.dark-theme .op-b-read-more {
+  color: #fff;
+}
+
+.dark-theme .op-b-read-more:before {
+  background: #fff;
+}
+
+/*--------------------------------------------------
+    [Header One Page Business]
+----------------------------------------------------*/
+/* Navbar Toggle */
+.dark-theme .op-b-header .navbar-toggle .icon-bar {
+  background: #fff;
+}
+
+/* Nav */
+.dark-theme .op-b-header .nav-item .nav-item-child {
+  color: #fff;
+}
+
+/* Media Queries below 991px */
+@media (max-width: 991px) {
+  /* Bootstrap collapse of navigation with a maximum width: 991px
+    (Change it to any breakpoint you want to be collapsed) */
+  .dark-theme .op-b-header .navbar-collapse {
+    border-top-color: #3a3a44;
+  }
+  /* Navbar */
+  .dark-theme .op-b-header .navbar {
+    background: #34343c;
+  }
+  /* Nav */
+  .dark-theme .op-b-header .nav-item {
+    color: #fff;
+  }
+  .dark-theme .op-b-header .nav-item .nav-item-child {
+    color: #fff;
+  }
+}
+
+/* Media Queries above 992px */
+@media (min-width: 992px) {
+  /* Navbar */
+  .dark-theme .header-shrink.op-b-header {
+    border-bottom-color: #3a3a44;
+  }
+  .dark-theme .header-shrink.op-b-header .navbar {
+    background: #34343c;
+  }
+}
+
+/*--------------------------------------------------
+    [Header One Page Business White Semi Transparent]
+----------------------------------------------------*/
+/* Media Queries above 992px */
+@media (min-width: 992px) {
+  /* Navbar */
+  .dark-theme .op-b-header.op-b-header-white-semi-transprent .navbar {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .dark-theme .header-shrink.op-b-header .nav-item .nav-item-child {
+    color: #fff;
+  }
+  .dark-theme .header-shrink.op-b-header .nav-item .nav-item-child:before {
+    background: #fff;
+  }
+}
+
+/* Media Queries above 992px */
+@media (min-width: 992px) {
+  /* Navbar */
+  .dark-theme .op-b-header.op-b-header-dark-semi-transprent .navbar {
+    background: rgba(52, 52, 60, 0.2);
+  }
+}
+
+/* Media Queries above 992px */
+@media (min-width: 992px) {
+  /* Shrink Nav */
+  .dark-theme .header-shrink.op-b-header.op-b-header-white .nav-item .nav-item-child {
+    color: #fff;
+  }
+
+  .dark-theme .header-shrink.op-b-header.op-b-header-white .nav-item .nav-item-child:before {
+    background: #fff;
+  }
+}
+
+/*--------------------------------------------------
+    [Header One Page Business Center]
+----------------------------------------------------*/
+/* Media Queries above 992px */
+@media (min-width: 992px) {
+  /* Header Shrink */
+  .dark-theme .header-shrink.op-b-header .navbar {
+    background: #34343c;
+  }
+}
+
+/*--------------------------------------------------
+    [Promo Block One Page Business v2]
+----------------------------------------------------*/
+.dark-theme .op-b-promo-b-v2 {
+  background: #464652;
+}
+
+/*--------------------------------------------------
+    [Promo Block One Page Business v5]
+----------------------------------------------------*/
+.dark-theme .op-b-promo-b-v5 {
+  background: #34343c;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(white));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9), white);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9), white);
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.9), white);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.9), white);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.9), white);
+}
+
+/*--------------------------------------------------
+    [Promo Block One Page Business v9]
+----------------------------------------------------*/
+.dark-theme .op-b-promo-b-v9 {
+  background: #464652;
+}
+
+/*--------------------------------------------------
+    [Promo Block One Page Business v10]
+----------------------------------------------------*/
+.dark-theme .op-b-promo-b-v10 {
+  background: #464652;
+}
+
+/* Services One Page Business v1 */
+.dark-theme .op-b-services-v1 {
+  background: #34343c;
+}
+
+.dark-theme .op-b-services-v1 .op-b-services-v1-media {
+  border-bottom-color: #b3b3b3;
+}
+
+.dark-theme .op-b-services-v1 .op-b-services-v1-img-wrap {
+  box-shadow: 0 2px 5px 3px #40404a;
+}
+
+/* Blog One Page Business */
+.dark-theme .op-b-blog {
+  background: #34343c;
+  border-right-color: #505050;
+}
+
+/* Blog One Page Business */
+.dark-theme .footer-op-b .footer-op-b-form:focus {
+  box-shadow: 4px 4px 4px 2px #40404a;
+}
+
+/* Portfolio */
+.dark-theme .cbp-l-inline {
+  background: #34343c;
+}
+
+/* Promo Block One Page Business v6 */
+.dark-theme .op-b-promo-b-v6 {
+  box-shadow: 0 10px 20px 0 #40404a;
+}
+
+.dark-theme .op-b-promo-b-v6:before {
+  background: rgba(52, 52, 60, 0.5);
+}
+
+/* Promo Block One Page Business v13 */
+.dark-theme .op-b-promo-b-v13 .op-b-promo-b-v13-icon {
+  color: #34343c;
+  background: #fff;
+}
+
+.dark-theme .op-b-promo-b-v13 .op-b-promo-b-v13-icon:hover {
+  color: #fff;
+  background: #4fd2c2;
+}
+
+.dark-theme .op-b-promo-b-v13 .op-b-promo-b-v13-text {
+  color: #d8dde6;
+}

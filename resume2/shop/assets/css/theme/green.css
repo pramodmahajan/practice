@@ -1,0 +1,322 @@
+/*
+    [Green Color Theme]
+
+    CSS Color: #4fd2c2;
+    CSS Color Light: #6edfd1;
+
+    Sass Color: $color-green;
+    Sass Color Light: $color-green-light;
+*/
+/*------------------------------------------------------------------
+    [Shop Wrap Border]
+------------------------------------------------------------------*/
+.sh-wrap-brd:after {
+  border-color: #4fd2c2;
+}
+
+/*--------------------------------------------------
+    [Shop Accordion]
+----------------------------------------------------*/
+.sh-accordion .panel-title > a:focus, .sh-accordion .panel-title > a:hover {
+  color: #4fd2c2;
+}
+
+.sh-accordion .panel-title > a:focus:after, .sh-accordion .panel-title > a:hover:after {
+  color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Video]
+------------------------------------------------------------------*/
+.sh-video:hover .sh-video-play-icon {
+  color: #4fd2c2;
+}
+
+/*--------------------------------------------------
+    [Shop Tab]
+----------------------------------------------------*/
+.sh-tab .nav-tabs > li:hover > a {
+  color: #4fd2c2;
+}
+
+.sh-tab .nav-tabs > li.active > a {
+  color: #4fd2c2;
+  border-color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Form]
+------------------------------------------------------------------*/
+.sh-form-input {
+  color: #4fd2c2;
+}
+
+.sh-form-input::-moz-placeholder {
+  color: #4fd2c2;
+}
+
+.sh-form-input:-ms-input-placeholder {
+  color: #4fd2c2;
+}
+
+.sh-form-input::-webkit-input-placeholder {
+  color: #4fd2c2;
+}
+
+/* Shop Form v2 */
+.sh-form-v2 .sh-form-v2-input {
+  color: #4fd2c2;
+}
+
+.sh-form-v2 .sh-form-v2-input::-moz-placeholder {
+  color: #4fd2c2;
+}
+
+.sh-form-v2 .sh-form-v2-input:-ms-input-placeholder {
+  color: #4fd2c2;
+}
+
+.sh-form-v2 .sh-form-v2-input::-webkit-input-placeholder {
+  color: #4fd2c2;
+}
+
+.sh-form-v2 .sh-form-v2-btn {
+  color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Heading v1]
+------------------------------------------------------------------*/
+.sh-heading-v1 .sh-heading-v1-subtitle {
+  color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Sidebar List]
+------------------------------------------------------------------*/
+.sh-sidebar-list .sh-sidebar-list-link:hover:after {
+  color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Related v1]
+------------------------------------------------------------------*/
+.sh-related-v1 .sh-related-v1-category:hover {
+  color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Info Block]
+------------------------------------------------------------------*/
+.sh-info-block:before {
+  border-top-color: #4fd2c2;
+  border-bottom-color: #4fd2c2;
+}
+
+.sh-info-block:after {
+  border-left-color: #4fd2c2;
+  border-right-color: #4fd2c2;
+}
+
+.sh-info-block .sh-info-icon {
+  color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop News v1]
+------------------------------------------------------------------*/
+
+.sh-news-v1:before {
+  border-top-color: #4fd2c2;
+  border-bottom-color: #4fd2c2;
+}
+
+.sh-news-v1:after {
+  border-left-color: #4fd2c2;
+  border-right-color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Delivery]
+------------------------------------------------------------------*/
+.sh-delivery .sh-delivery-no,
+.sh-delivery .sh-delivery-title {
+  color: #4fd2c2;
+}
+
+.sh-delivery:hover, .sh-delivery:focus {
+  background: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Clients v1]
+------------------------------------------------------------------*/
+.sh-clients-v1:after {
+  background: rgba(79, 210, 194, 0);
+}
+
+.sh-clients-v1:hover:after {
+  background: rgba(79, 210, 194, 0.95);
+}
+
+/*--------------------------------------------------
+    [Shop Payment Method]
+----------------------------------------------------*/
+.sh-checkout-payment.is-active .sh-checkout-payment-method {
+  color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Category v1]
+------------------------------------------------------------------*/
+.sh-category-v1 .sh-category-link {
+  border-bottom-color: #4fd2c2;
+}
+
+/*--------------------------------------------------
+    [Range Slider]
+----------------------------------------------------*/
+.slider .slider-selection {
+  background: #4fd2c2;
+}
+
+.slider .slider-handle {
+  background: #4fd2c2;
+}
+
+/* Tooltip */
+.slider .tooltip-inner {
+  background: #4fd2c2;
+}
+
+.slider .tooltip.top .tooltip-arrow {
+  border-top-color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Newsletter Form]
+------------------------------------------------------------------*/
+.newsletter-popup .newsletter-popup-close-btn-icon:hover {
+  color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Product v1]
+------------------------------------------------------------------*/
+.sh-product-v1 .sh-product-v1-price {
+  color: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Point]
+------------------------------------------------------------------*/
+.sh-point .sh-point-single > a {
+  background: #4fd2c2;
+}
+
+/*------------------------------------------------------------------
+    [Shop Header]
+------------------------------------------------------------------*/
+/* Navbar Toggle */
+.sh-header .navbar-toggle:hover .toggle-icon {
+  background: #4fd2c2;
+}
+
+.sh-header .navbar-toggle:hover .toggle-icon:before, .sh-header .navbar-toggle:hover .toggle-icon:after {
+  background: #4fd2c2;
+}
+
+.sidebar-trigger-shop-label {
+  background: #4fd2c2;
+}
+
+/* Navbar Nav */
+.sh-header .navbar-nav .nav-item-child.active {
+  color: #4fd2c2;
+}
+
+.sh-header .navbar-nav .nav-item-child.active:hover {
+  color: #4fd2c2;
+}
+
+.sh-header .navbar-nav .nav-item-child:hover, .sh-header .navbar-nav .nav-item-child:focus {
+  color: #4fd2c2;
+}
+
+/* Dropdown Menu */
+.sh-header .dropdown-menu .dropdown-menu-item .dropdown-menu-item-child.active {
+  color: #4fd2c2;
+}
+
+.sh-header .dropdown-menu .dropdown-menu-item .dropdown-menu-item-child.active:hover {
+  color: #4fd2c2;
+}
+
+.sh-header .dropdown-menu .dropdown-menu-item .dropdown-menu-item-child:hover {
+  background: #4fd2c2;
+}
+
+.sh-header .dropdown-menu .dropdown-menu-item.active .dropdown-menu-item-child {
+  color: #4fd2c2;
+}
+
+/* Dropdown Submenu */
+.sh-header .dropdown-submenu:hover .dropdown-submenu-child {
+  color: #4fd2c2;
+}
+
+.sh-header .dropdown-submenu .dropdown-submenu-child.active {
+  color: #4fd2c2;
+}
+
+.sh-header .dropdown-submenu .dropdown-submenu-child.active:hover {
+  color: #4fd2c2;
+}
+
+.sh-header .dropdown-submenu .dropdown-submenu-child.active:hover:after {
+  color: #4fd2c2;
+}
+
+.sh-header .dropdown-submenu .dropdown-submenu-child:hover {
+  background: #4fd2c2;
+}
+
+.sh-header .dropdown-submenu.active .dropdown-submenu-child {
+  color: #4fd2c2;
+}
+
+.sh-header .dropdown-submenu.active .dropdown-submenu-child:hover {
+  color: #4fd2c2;
+}
+
+/* Mega Menu */
+.sh-header .mega-menu-list .mega-menu-child.active {
+  color: #4fd2c2;
+}
+
+.sh-header .mega-menu-list .mega-menu-child.active:hover {
+  color: #4fd2c2;
+}
+
+.sh-header .mega-menu-list .mega-menu-child:hover {
+  background: #4fd2c2;
+}
+
+/* Media Queries below 991px */
+@media (max-width: 991px) {
+  /* Navbar Nav */
+  .sh-header .navbar-nav .nav-item-bg .nav-item-child {
+    background: #4fd2c2;
+  }
+}
+
+/* Media Queries below 991px */
+@media (min-width: 991px) {
+  /* Navbar */
+  .sh-header .navbar-nav .nav-item .dropdown-menu {
+    border-top-color: #4fd2c2;
+  }
+  .sh-header .navbar-nav .nav-item-bg .nav-item-child {
+    background: #4fd2c2;
+  }
+}

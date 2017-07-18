@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------
+    [Shop Form]
+------------------------------------------------------------------*/
+
+.sh-form-input {
+	height: 48px;
+    color: $color-gold;
+    @include placeholder($color-gold);
+    border: none;
+    padding: 7px 45px 7px 25px;
+
+    &:focus {
+        box-shadow: 0 3px 3px 0 darken($color-floral-white, 4%);
+        color: $color-black;
+		@include placeholder($color-black);
+    }
+}
+
+/* Shop Form v2 */
+.sh-form-v2 {
+    position: relative;
+
+    .sh-form-v2-input {
+        height: 48px;
+        color: $color-gold;
+        @include placeholder($color-gold);
+        background: $color-floral-white;
+        border: none;
+        padding: 7px 50px 7px 25px;
+
+        &:focus {
+            color: $color-black;
+            @include placeholder($color-black);
+        }
+    }
+
+    .sh-form-v2-btn {
+        @include position(absolute, $top: 0, $right: 0);
+        background: $color-floral-white;
+        color: $color-gold;
+        padding: 12px 15px;
+
+        &:hover {
+            color: $color-black;
+        }
+    }
+}

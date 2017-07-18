@@ -1,0 +1,64 @@
+/*------------------------------------------------------------------
+    [Newsletter Form]
+------------------------------------------------------------------*/
+
+.newsletter-popup {
+	@include position(fixed, $top: 50%, $left: 50%);
+	z-index: 999999;
+	@include size(800px, 500px);
+	display: none;
+	background: $color-floral-white;
+  	opacity: 0;
+	@include translate3d(-50%,-50%,0);
+
+	.newsletter-popup-close-btn {
+		@include position(absolute, $top: 20px, $right: 20px);
+		z-index: 1;
+		text-decoration: none;
+	}
+	
+	.newsletter-popup-close-btn-icon {
+		@include font($size: $font-size-14);
+		color: $color-subtitle;
+
+		&:hover {
+			color: $color-gold;
+		}
+	}
+}
+
+/* Open */
+.newsletter-popup-open {
+	&.newsletter-popup-open-with-overlay {
+	  	overflow: hidden;
+	}
+	
+	.newsletter-popup-overlay,
+	.newsletter-popup {
+	  	opacity: 1;
+	}
+}
+
+/* Popup Overlay */
+.newsletter-popup-overlay {
+	@include position(fixed, $top: 0, $left: 0, $right: 0);
+	z-index: 99999;
+  	@include size(100%);
+	@include bg-opacity($color-black, .7);
+	opacity: 0;
+	overflow: auto;
+	@include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+}
+
+/* Close */
+.newsletter-popup-close-backdrop {
+	@include position(absolute, $top: 0, $right: 0);
+  	@include size(100%);
+  	cursor: pointer;
+}
+
+[class^="newsletter-popup-animation-"],
+[class*=" newsletter-popup-animation-"] {
+	@include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+}
+

@@ -1,0 +1,302 @@
+/*--------------------------------------------------
+    [Dark Theme]
+----------------------------------------------------*/
+
+/* Read More */
+.dark-theme {
+	.read-more-op-b {
+	    color: $color-white;
+
+	    &:before {
+	        background: $color-white;
+	    }
+	}
+}
+
+/*--------------------------------------------------
+    [Header One Page Business]
+----------------------------------------------------*/
+
+/* Navbar Toggle */
+.dark-theme {
+    .op-b-header {
+        .navbar-toggle {
+            .icon-bar {
+                background: $color-white;
+            }
+        }
+    }
+}
+
+/* Nav */
+.dark-theme {
+  .op-b-header {
+      .nav-item {
+          .nav-item-child {
+              color: $color-white;
+
+              &:before {
+                  background: $color-white;
+              }
+          }
+      }
+  }
+}
+
+/* Media Queries below 991px */
+@media (max-width: $screen-sm-max) {
+    /* Bootstrap collapse of navigation with a maximum width: 991px
+    (Change it to any breakpoint you want to be collapsed) */
+    .dark-theme {
+        .op-b-header {
+            .navbar-collapse {
+                border-top-color: $color-dark-light;
+            }
+        }
+    }
+
+    /* Navbar */
+    .dark-theme {
+        .op-b-header {
+            .navbar {
+                @include bg-opacity($color-dark, 1);
+            }
+        }
+    }
+
+    /* Nav */
+    .dark-theme {
+        .op-b-header {
+            .nav-item {
+                color: $color-white;
+
+                .nav-item-child {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Navbar */
+    .dark-theme {
+        .header-shrink {
+            &.op-b-header {
+                border-bottom-color: $color-dark-light;
+
+                .navbar {
+                    @include bg-opacity($color-dark, 1);
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------
+    [Header One Page Business White Semi Transparent]
+----------------------------------------------------*/
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Navbar */
+    .dark-theme {
+        .op-b-header {
+            &.op-b-header-white-semi-transprent {
+                .navbar {
+                    @include bg-opacity($color-white, .2);
+                }
+            }
+        }
+    }
+
+     /* Navbar Logo */
+    .header-shrink {
+        /* Nav Item */
+        &.op-b-header {
+            .nav-item {
+                .nav-item-child {
+                    color: $color-white;
+
+                    &:before {
+                        background: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Navbar */
+    .dark-theme {
+        .op-b-header {
+            &.op-b-header-dark-semi-transprent {
+                .navbar {
+                    @include bg-opacity($color-dark, .2);
+                }
+            }
+        }
+    }
+}
+
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Shrink Nav */
+    .dark-theme {
+        .header-shrink {
+            &.op-b-header {
+                &.op-b-header-white {
+                    .nav-item {
+                        .nav-item-child {
+                            color: $color-white;
+
+                            &:before {
+                                background: $color-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------
+    [Header One Page Business Center]
+----------------------------------------------------*/
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Header Shrink */
+    .dark-theme {
+        .header-shrink {
+            &.op-b-header {
+                .navbar {
+                    @include bg-opacity($color-dark, 1);
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------
+    [Promo Block One Page Business v2]
+----------------------------------------------------*/
+
+.dark-theme {
+    .op-b-promo-b-v2 {
+        background: lighten($color-dark-light, 5%);
+    }
+}
+
+
+/*--------------------------------------------------
+    [Promo Block One Page Business v5]
+----------------------------------------------------*/
+
+.dark-theme {
+    .op-b-promo-b-v5 {
+        background: $color-dark;
+        @include gradient(rgba(0,0,0,.9), rgba(255,255,255,1));
+    }
+}
+
+
+/*--------------------------------------------------
+    [Promo Block One Page Business v9]
+----------------------------------------------------*/
+
+.dark-theme {
+    .op-b-promo-b-v9 {
+        background: lighten($color-dark-light, 5%);
+    }
+}
+
+/*--------------------------------------------------
+    [Promo Block One Page Business v10]
+----------------------------------------------------*/
+
+.dark-theme {
+    .op-b-promo-b-v10 {
+        background: lighten($color-dark-light, 5%);
+    }
+}
+
+/* Services One Page Business v1 */
+.dark-theme {
+	.op-b-services-v1 {
+		background: $color-dark;
+
+		.op-b-services-v1-media {
+			border-bottom-color: darken($color-white, 30%);
+		}
+
+		.op-b-services-v1-img-wrap {
+			box-shadow: 0 2px 5px 3px lighten($color-dark, 5%);
+		}
+	}
+}
+
+/* Blog One Page Business */
+.dark-theme {
+	.op-b-blog {
+		background: $color-dark;
+		border-right-color: #505050;
+	}
+}
+
+/* Blog One Page Business */
+.dark-theme {
+	.footer-op-b {
+		.footer-op-b-form {
+	    	&:focus {
+	    		box-shadow: 4px 4px 4px 2px lighten($color-dark, 5%);
+	    	}
+	    }
+	}
+}
+
+/* Portfolio */
+.dark-theme {
+	.cbp-l-inline {
+		background: $color-dark;
+	}
+}
+
+/* Promo Block One Page Business v6 */
+.op-b-promo-b-v6 {
+    box-shadow: 0 10px 20px 0 lighten($color-dark, 5%);
+
+    &:before {
+        @include bg-opacity($color-dark, .5);
+    }
+}
+
+
+/*--------------------------------------------------
+    [Promo Block One Page Business v13]
+----------------------------------------------------*/
+
+.dark-theme {
+    .op-b-promo-b-v13 {
+        .op-b-promo-b-v13-icon {
+            color: $color-dark;
+            background: $color-white;
+
+            &:hover {
+                color: $color-white;
+                background: $color-green;
+            }
+        }
+
+        .op-b-promo-b-v13-text {
+            color: darken($color-sky-light, 10%);
+        }
+    }
+}

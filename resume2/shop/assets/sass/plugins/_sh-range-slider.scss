@@ -1,0 +1,76 @@
+/*--------------------------------------------------
+    [Range Slider]
+----------------------------------------------------*/
+
+.slider {
+    @include position(relative);
+    display: inline-block;
+    vertical-align: middle;
+
+    input {
+        display: none;
+    }
+
+    .slider-track {
+        @include position(absolute);
+        background: #f4eddf;
+        @include border-radius(50px);
+        cursor: pointer;
+    }
+    .slider-selection {
+        @include position(absolute);
+        background: $color-gold;
+    }
+    .slider-handle {
+        @include position(absolute);
+        @include size(17px);
+        background: $color-gold;
+        @include border-radius(50%);
+
+        &:before {
+            @include position(absolute, $top: 3px, $left: 3px);
+            @include size(11px);
+            background: $color-white;
+            @include border-radius(50%);
+            content: " ";
+        }
+    }
+}
+
+/* Tooltip */
+.slider {
+    .tooltip-inner {
+        color: $color-white;
+        background: $color-gold;
+        white-space: nowrap;
+    }
+
+    .tooltip {
+        &.top {
+            margin-top: -36px;
+
+            .tooltip-arrow {
+                border-top-color: $color-gold;
+            }
+        }
+    }
+}
+
+/* Horizontal */
+.slider {
+    &.slider-horizontal {
+        @include size(100% !important, 3px);
+    }
+    
+    .slider-track {
+        @include size(100%, 3px);
+    }
+
+    .slider-selection {
+        height: 100%;
+    }
+    
+    .slider-handle {
+        margin: -7px 0 0 -7px;
+    }
+}

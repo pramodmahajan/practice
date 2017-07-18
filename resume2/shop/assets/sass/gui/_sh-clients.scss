@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------
+    [Shop Clients v1]
+------------------------------------------------------------------*/
+
+.sh-clients-v1 {
+	@include position(relative);
+	text-decoration: none;
+
+	&:after {
+		@include position(absolute, $top: 0, $left: 0);
+		@include size(100%);
+		@include bg-opacity($color-gold, 0);
+		content: " ";
+		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	}
+
+	.sh-clients-v1-info {
+		@include position(absolute, $top: 50%);
+		@include size(100%, auto);
+		z-index: 1;
+		text-align: center;
+		line-height: 1.2;
+		opacity: 0;
+		@include translate3d(0,-100%,0);
+		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	}
+
+	.sh-clients-v1-text {
+		display: block;
+		@include font($size: $font-size-18, $weight: $font-weight-500);
+		color: $color-white;
+	}
+
+	&:hover {
+		&:after {
+			@include bg-opacity($color-gold, .95);
+			@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));		
+		}
+
+		.sh-clients-v1-info {
+			opacity: 1;
+			@include translate3d(0,-50%,0);
+			@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+		}
+	}
+}

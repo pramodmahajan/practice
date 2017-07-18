@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------
+    [Shop Delivery]
+------------------------------------------------------------------*/
+
+.sh-delivery {
+    text-align: center;
+    background: $color-floral-white;
+    padding: 20px 30px;
+    @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+
+    .sh-delivery-no,
+    .sh-delivery-title {
+        color: $color-gold;
+        @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+    }
+
+    .sh-delivery-no {
+        display: block;
+        @include font($font-size-22);
+    }
+
+    .sh-delivery-title {
+        display: block;
+        @include font($font-size-15);
+        text-transform: uppercase;   
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background: $color-gold;
+        @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+
+        .sh-delivery-no,
+        .sh-delivery-title {
+            color: $color-white;
+            @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+        }
+    }
+}

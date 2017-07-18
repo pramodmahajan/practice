@@ -1,0 +1,461 @@
+/*
+    [Pink Color Theme]
+
+    CSS Color: #e91e63;
+    CSS Color Light: #ec407a;
+
+    Sass Color: $color-pink;
+    Sass Color Light: $color-pink-light;
+*/
+
+/*------------------------------------------------------------------
+    [Shop Wrap Border]
+------------------------------------------------------------------*/
+
+.sh-wrap-brd {
+    &:after {
+        border-color: $color-pink;
+    }
+}
+
+
+/*--------------------------------------------------
+    [Shop Accordion]
+----------------------------------------------------*/
+
+.sh-accordion {
+    .panel-title {
+        > a {
+            &:focus,
+            &:hover {
+                color: $color-pink;
+
+                &:after {
+                    color: $color-pink;
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Video]
+------------------------------------------------------------------*/
+
+.sh-video {
+    &:hover {
+        .sh-video-play-icon {
+            color: $color-pink;
+        }
+    }
+}
+
+
+/*--------------------------------------------------
+    [Shop Tab]
+----------------------------------------------------*/
+
+.sh-tab {
+    .nav-tabs {
+        > li {
+            &:hover {
+                > a {
+                    color: $color-pink;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $color-pink;
+                    border-color: $color-pink;
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Form]
+------------------------------------------------------------------*/
+
+.sh-form-input {
+    color: $color-pink;
+    @include placeholder($color-pink);
+}
+
+/* Shop Form v2 */
+.sh-form-v2 {
+    .sh-form-v2-input {
+        color: $color-pink;
+        @include placeholder($color-pink);
+    }
+
+    .sh-form-v2-btn {
+        color: $color-pink;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Heading v1]
+------------------------------------------------------------------*/
+
+.sh-heading-v1 {
+    .sh-heading-v1-subtitle {
+        color: $color-pink;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Sidebar List]
+------------------------------------------------------------------*/
+
+.sh-sidebar-list {
+    .sh-sidebar-list-link {
+        &:hover {
+            &:after {
+                color: $color-pink;
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Related v1]
+------------------------------------------------------------------*/
+
+.sh-related-v1 {
+    .sh-related-v1-category {
+        &:hover {
+            color: $color-pink;
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Info Block]
+------------------------------------------------------------------*/
+
+.sh-info-block {
+    &:before {
+        border-top-color: $color-pink;
+        border-bottom-color: $color-pink;
+    }
+
+    &:after {
+        border-left-color: $color-pink;
+        border-right-color: $color-pink;
+    }
+
+    .sh-info-icon {
+        color: $color-pink;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop News v1]
+------------------------------------------------------------------*/
+
+.sh-news-v1 {
+    &:before {
+        border-top-color: $color-pink;
+        border-bottom-color: $color-pink;
+    }
+
+    &:after {
+        border-left-color: $color-pink;
+        border-right-color: $color-pink;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Delivery]
+------------------------------------------------------------------*/
+
+.sh-delivery {
+    .sh-delivery-no,
+    .sh-delivery-title {
+        color: $color-pink;
+    }
+
+    &:hover,
+    &:focus {
+        background: $color-pink;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Clients v1]
+------------------------------------------------------------------*/
+
+.sh-clients-v1 {
+    &:after {
+        @include bg-opacity($color-pink, 0);
+    }
+
+    &:hover {
+        &:after {
+            @include bg-opacity($color-pink, .95);
+        }
+    }
+}
+
+
+/*--------------------------------------------------
+    [Shop Payment Method]
+----------------------------------------------------*/
+
+.sh-checkout-payment {
+    &.is-active {
+        .sh-checkout-payment-method {
+            color: $color-pink;
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Category v1]
+------------------------------------------------------------------*/
+
+.sh-category-v1 {
+    .sh-category-link {
+        border-bottom-color: $color-pink;
+    }
+}
+
+
+/*--------------------------------------------------
+    [Range Slider]
+----------------------------------------------------*/
+
+.slider {
+    .slider-selection {
+        background: $color-pink;
+    }
+    .slider-handle {
+        background: $color-pink;
+    }
+}
+
+/* Tooltip */
+.slider {
+    .tooltip-inner {
+        background: $color-pink;
+    }
+
+    .tooltip {
+        &.top {
+            .tooltip-arrow {
+                border-top-color: $color-pink;
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Newsletter Form]
+------------------------------------------------------------------*/
+
+.newsletter-popup {
+    .newsletter-popup-close-btn-icon {
+        &:hover {
+            color: $color-pink;
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Product v1]
+------------------------------------------------------------------*/
+
+.sh-product-v1 {
+    .sh-product-v1-price {
+        color: $color-pink;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Point]
+------------------------------------------------------------------*/
+
+.sh-point {
+    .sh-point-single > a {
+        background: $color-pink;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Header]
+------------------------------------------------------------------*/
+
+/* Navbar Toggle */
+.sh-header {
+    .navbar-toggle {
+        &:hover {
+            .toggle-icon {
+                background: $color-pink;
+
+                &:before,
+                &:after {
+                    background: $color-pink;
+                }
+            }
+        }
+    }
+}
+
+.sidebar-trigger-shop-label {
+    background: $color-pink;
+}
+
+/* Navbar Nav */
+.sh-header {
+    .navbar-nav {
+        .nav-item-child {
+            &.active {
+                color: $color-pink;
+
+                &:hover {
+                    color: $color-pink;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                color: $color-pink;
+            }
+        }
+    }
+}
+
+/* Dropdown Menu */
+.sh-header {
+    .dropdown-menu {
+        .dropdown-menu-item {
+            .dropdown-menu-item-child {
+                &.active {
+                    color: $color-pink;
+
+                    &:hover {
+                        color: $color-pink;
+                    }
+                }
+
+                &:hover {
+                    background: $color-pink;
+                }
+            }
+
+            &.active {
+                .dropdown-menu-item-child {
+                    color: $color-pink;
+                }
+            }
+        }
+    }
+}
+
+/* Dropdown Submenu */
+.sh-header {
+    .dropdown-submenu {
+        &:hover {
+            .dropdown-submenu-child {
+                color: $color-pink;
+            }
+        }
+
+        .dropdown-submenu-child {
+            &.active {
+                color: $color-pink;
+
+                &:hover {
+                    color: $color-pink;
+
+                    &:after {
+                        color: $color-pink;
+                    }
+                }
+            }
+
+            &:hover {
+                background: $color-pink;
+            }
+        }
+
+        &.active {
+            .dropdown-submenu-child {
+                color: $color-pink;
+
+                &:hover {
+                    color: $color-pink;
+                }
+            }
+        }
+    }
+}
+
+/* Mega Menu */
+.sh-header {
+    .mega-menu-list {
+        .mega-menu-child {
+            &.active {
+                color: $color-pink;
+
+                &:hover {
+                    color: $color-pink;
+                }
+            }
+
+            &:hover {
+                background: $color-pink;
+            }
+        }
+    }
+}
+
+/* Media Queries below 991px */
+@media (max-width: $screen-sm-max) {
+    /* Navbar Nav */
+    .sh-header {
+        .navbar-nav {
+            .nav-item-bg {
+                .nav-item-child {
+                    background: $color-pink;
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries below 991px */
+@media (min-width: $screen-sm-max) {
+    /* Navbar */
+    .sh-header {
+        .navbar-nav {
+            .nav-item {
+                .dropdown-menu {
+                    border-top-color: $color-pink;
+                }
+            }
+
+            .nav-item-bg {
+                .nav-item-child {
+                    background: $color-pink;
+                }
+            }
+        }
+    }
+}

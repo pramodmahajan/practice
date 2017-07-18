@@ -1,0 +1,136 @@
+/*------------------------------------------------------------------
+    [Shop Banner Image v1]
+------------------------------------------------------------------*/
+
+.sh-banner-img-v1 {
+    position: relative;
+    z-index: 1;
+    background: url(../../shop/assets/img/1920x1080/08.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    &:before {
+        @include position(absolute, $top: 0, $left: 0);
+        z-index: -1;
+        @include size(100%);
+        @include bg-opacity($color-black, .4);
+        content: " ";
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Banner Image v2]
+------------------------------------------------------------------*/
+
+.sh-banner-img-v2 {
+    position: relative;
+    background: url(../../shop/assets/img/1920x1080/05.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 20px 0;
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Banner Image v3]
+------------------------------------------------------------------*/
+
+.sh-banner-img-v3 {
+    position: relative;
+
+    &:before {
+        @include position(absolute, $top: 0, $left: 0);
+        z-index: -1;
+        @include size(100%);
+        @include bg-opacity($color-black, .4);
+        content: " ";
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Banner Image v4]
+------------------------------------------------------------------*/
+
+.sh-banner-img-v4 {
+    position: relative;
+    z-index: 1;
+    background: url(../../shop/assets/img/1920x1080/09.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &:before {
+        @include position(absolute, $top: 0, $left: 0);
+        z-index: -1;
+        @include size(100%);
+        @include bg-opacity($color-black, .85);
+        content: " ";
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Banner Image v5]
+------------------------------------------------------------------*/
+
+.sh-banner-img-v5 {
+    position: relative;
+    z-index: 1;
+    background: url(../../shop/assets/img/1920x1080/12.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 120px;
+
+    &:before {
+        @include position(absolute, $top: 0, $left: 0);
+        z-index: -1;
+        @include size(100%);
+        @include bg-opacity($color-black, .75);
+        content: " ";
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Banner Image v6]
+------------------------------------------------------------------*/
+
+.sh-banner-img-v6 {
+    background: url(../../shop/assets/img/1920x1080/14.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Banner Image v7]
+------------------------------------------------------------------*/
+
+.sh-banner-img-v7 {
+    position: relative;
+    background: url(../../shop/assets/img/1920x1080/17.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Banner Image v8]
+------------------------------------------------------------------*/
+
+.sh-banner-img-v8 {
+    position: relative;
+    z-index: 1;
+    background: url(../../shop/assets/img/1920x1080/16.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &:before {
+        @include position(absolute, $top: 0, $left: 0);
+        z-index: -1;
+        @include size(100%);
+        @include bg-opacity($color-black, .5);
+        content: " ";
+    }
+}

@@ -1,0 +1,440 @@
+/*------------------------------------------------------------------
+    [Purple Color Theme]
+------------------------------------------------------------------ */
+
+a {
+    color: $color-purple;
+
+    &:focus,
+    &:hover,
+    &:active {
+        color: $color-purple;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    > a {
+
+        &:hover {
+            color: $color-purple;
+        }
+    }
+}
+
+/* Read More */
+.read-more-op-b {
+    &:hover {
+        color: $color-purple;
+
+        &:before {
+            background: $color-purple;
+        }
+    }
+}
+
+/* Read More White */
+.read-more-op-b {
+    &.read-more-white-op-b {
+        color: $color-white;
+
+        &:before {
+            background: $color-white;
+        }
+    }
+}
+
+/* Navbar Toggle */
+.op-b-header {
+    .navbar-toggle {
+        &:hover {
+            .icon-bar {
+                background: $color-purple;
+            }
+        }
+    }
+}
+
+/* Language */
+.op-b-header {
+    .nav-language-list {
+        border-color: rgba(178, 96, 206, .2);
+    }
+
+    .nav-language-list-link {
+        color: $color-purple;
+        @include bg-opacity($color-purple, 0);
+
+        &:hover {
+            @include bg-opacity($color-purple, .1);
+        }
+
+        &.active {
+            @include bg-opacity($color-purple, .4);
+        }
+    }
+}
+
+/* Nav */
+.op-b-header {
+    .nav-item {
+        .nav-item-child {
+            &:hover,
+            &:focus {
+                color: $color-purple;
+
+                &:before {
+                    background: $color-purple;
+                }
+            }
+        }
+        
+        &.active {
+            .nav-item-child {
+                color: $color-purple;
+
+                &:before {
+                    background: $color-purple;
+                }
+
+                &:hover,
+                &:focus {
+                    color: $color-purple;
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries below 991px */
+@media (max-width: $screen-sm-max) {
+    /* Bootstrap collapse of navigation with a maximum width: 991px
+    (Change it to any breakpoint you want to be collapsed) */
+    .op-b-header {
+        .nav-language-list {
+            border-color: rgba(178, 96, 206, .4);
+        }
+
+        .nav-language-list-link {
+            color: $color-purple;
+
+            &:hover {
+                @include bg-opacity($color-purple, .5);
+            }
+
+
+            &.active {
+                @include bg-opacity($color-purple, .6);
+            }
+        }
+    }
+
+    /* Nav */
+    .op-b-header {
+        .nav-item {
+            .nav-item-child {
+                &:hover {
+                    color: $color-purple;
+                }
+            }
+
+            &.active {
+                .nav-item-child {
+                    color: $color-purple;
+
+                    &:before {
+                        background: $color-purple;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $color-purple;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Navbar Logo */
+    .header-shrink {
+        &.op-b-header {
+            .nav-item {
+                .nav-item-child {
+                    &:hover,
+                    &:focus {
+                        color: $color-purple;
+
+                        &:before {
+                            background: $color-purple;
+                        }
+                    }
+                }
+
+                &.active {
+                    .nav-item-child {
+                        color: $color-purple;
+
+                        &:before {
+                            background: $color-purple;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $color-purple;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.op-b-header {
+            .nav-language-list {
+                border-color: rgba(178, 96, 206, .4);
+            }
+
+            .nav-language-list-link {
+                color: $color-purple;
+
+                &:hover {
+                    @include bg-opacity($color-purple, .5);
+                }
+
+                &.active {
+                    @include bg-opacity($color-purple, .6);
+                }
+            }
+        }
+    }
+}
+
+
+/* Header One Page Business White Semi Transparent */
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Shrink Language */
+    .header-shrink {
+        &.op-b-header {
+            &.op-b-header-white-semi-transprent {
+                .nav-language-list-link {
+                    color: $color-purple;
+                }
+            }
+        }
+    }
+}
+
+
+/* Header One Page Business Dark Semi Transparent */
+
+/* Language */
+.op-b-header {
+    &.op-b-header-dark-semi-transprent {
+        .nav-language-list {
+            border-color: rgba(178, 96, 206, 0.4);
+        }
+
+        .nav-language-list-link {
+            &.active {
+                @include bg-opacity($color-purple, .4);
+            }
+        }
+    }
+}
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Shrink Language */
+    .header-shrink {
+        &.op-b-header {
+            &.op-b-header-dark-semi-transprent {
+                .nav-language-list-link {
+                    color: $color-purple;
+
+                    &.active {
+                        @include bg-opacity($color-purple, .4);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Header One Page Business White */
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Shrink Nav */
+    .header-shrink {
+        &.op-b-header {
+            &.op-b-header-white {
+                .nav-item {
+                    .nav-item-child {
+                        &:hover {
+                            color: $color-purple;
+
+                            &:before {
+                                background: $color-purple;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        .nav-item-child {
+                            color: $color-purple;
+
+                            &:before {
+                                background: $color-purple;
+                            }
+
+                            &:hover {
+                                color: $color-purple;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Shrink Language */
+    .header-shrink {
+        &.op-b-header {
+            &.op-b-header-white {
+                .nav-language-list {
+                    border-color: rgba(178, 96, 206, .4);
+                }
+
+                .nav-language-list-link {
+                    color: $color-purple;
+
+                    &.active {
+                        @include bg-opacity($color-purple, .4);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Buttons Dropdown Default */
+.btn-dropdown-group {
+    &.open {
+        .btn-dropdown-toggle {
+            background: $color-purple;
+        }
+    }
+
+    &:hover {
+        .btn-dropdown-toggle {
+            background: $color-purple;
+        }
+    }
+}
+
+/* Button Base Color */
+.btn-green {
+    @include buttons($color-purple, $color-white, transparent, $color-purple, 1px, transparent, $color-purple);
+
+    .btn-base-element-xs {
+        @include buttons-element(transparent, darken($color-purple, 4%), 4px 9px);
+    }
+
+    .btn-base-element-sm {
+        @include buttons-element(transparent, darken($color-purple, 4%), 7px 11px);
+    }
+
+    .btn-base-element-md {
+        @include buttons-element(transparent, darken($color-purple, 4%), 8px 13px);
+    }
+
+    .btn-base-element-lg {
+        @include buttons-element(transparent, darken($color-purple, 4%), 10px 15px);
+    }
+}
+
+/* Buttons Border Base Color */
+.btn-green-brd {
+    @include buttons($color-purple, $color-white, transparent, $color-purple, 1px, $color-purple, $color-purple);
+
+    .btn-base-element-xs {
+        @include buttons-element(transparent, darken($color-purple, 4%), 4px 9px);
+    }
+
+    .btn-base-element-sm {
+        @include buttons-element(transparent, darken($color-purple, 4%), 7px 11px);
+    }
+
+    .btn-base-element-md {
+        @include buttons-element(transparent, darken($color-purple, 4%), 8px 13px);
+    }
+
+    .btn-base-element-lg {
+        @include buttons-element(transparent, darken($color-purple, 4%), 10px 15px);
+    }
+}
+
+/* Button Background Base Color */
+.btn-green-bg {
+    @include buttons($color-white, $color-white, $color-purple, $color-purple-light, 1px, transparent, transparent);
+
+    .btn-base-element-xs {
+        @include buttons-element(darken($color-purple, 4%), transparent, 4px 9px);
+    }
+
+    .btn-base-element-sm {
+        @include buttons-element(darken($color-purple, 4%), transparent, 7px 11px);
+    }
+
+    .btn-base-element-md {
+        @include buttons-element(darken($color-purple, 4%), transparent, 8px 13px);
+    }
+
+    .btn-base-element-lg {
+        @include buttons-element(darken($color-purple, 4%), transparent, 11px 15px);
+    }
+}
+
+/* Background Color Green */
+.bg-color-green {
+    background: $color-purple !important;
+}
+
+
+/* Promo Block One Page Business v4 */
+.op-b-promo-b-v4 {
+    .op-b-promo-b-v4-no {
+        color: $color-purple;
+    }
+}
+
+/* Promo Block One Page Business v6 */
+.op-b-promo-b-v6 {
+    .op-b-promo-b-v6-media-player {
+        &:hover {
+            background: $color-purple;
+        }
+    }
+}
+
+/* Promo Block One Page Business v9 */
+.op-b-promo-b-v9 {
+    .op-b-promo-b-v9-subtitle {
+        color: $color-purple;
+    }
+}
+
+/* Promo Block One Page Business v13 */
+.op-b-promo-b-v13 {
+    .op-b-promo-b-v13-title {
+        color: $color-purple;
+    }
+
+    .op-b-promo-b-v13-icon {
+        &:hover {
+            background: $color-purple !important;
+        }
+    }
+}

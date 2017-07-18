@@ -1,0 +1,59 @@
+/*--------------------------------------------------
+    [Services One Page Business v1]
+----------------------------------------------------*/
+
+.services-op-b-v1 {
+	background: $color-white;
+	padding: 30px;
+
+	.services-op-b-v1-media {
+		border-bottom: 1px solid $color-sky-light;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+
+	.services-op-b-v1-title {
+		@include font($size: $font-size-26);
+	}
+
+	.services-op-b-v1-img-wrap {
+		box-shadow: 0 2px 5px 3px lighten($color-tint-light, 1%);
+	}
+}
+
+/* Media Queries below 992px */
+@media (max-width: $screen-md-min) {
+	.services-op-b-v1 {
+		.services-op-b-v1-img-wrap {
+			max-width: 200px;		
+		}
+	}	
+}
+
+
+/*--------------------------------------------------
+    [Services One Page Business v2]
+----------------------------------------------------*/
+
+.services-op-b-v2 {
+	position: relative;
+	overflow: hidden;
+	padding: 30px;
+
+	.services-op-b-v2-icon {
+		@include position(absolute, $top: 50%, $right: -10px);
+		@include font($size: $font-size-100);
+		opacity: .2;
+		margin-top: -50px;
+	}
+
+	.services-op-b-v2-icon,
+	.services-op-b-v2-title,
+	.services-op-b-v2-text {
+		color: $color-white;
+	}
+
+	.services-op-b-v2-title {
+		@include font($size: $font-size-26);
+	}
+}

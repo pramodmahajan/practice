@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------
+    [Shop Heading v1]
+------------------------------------------------------------------*/
+
+.sh-heading-v1 {
+	.sh-heading-v1-title {
+		@include font($size: $font-size-50, $weight: $font-weight-600, $family: $font-family-dancing);
+
+		&.sh-heading-v1-title-sm {
+			@include font($size: $font-size-36);
+		}
+
+		&.sh-heading-v1-title-xs {
+			@include font($size: $font-size-28);
+		}
+	}
+
+	.sh-heading-v1-subtitle {
+		display: block;
+		@include font($size: $font-size-50, $family: $font-family-dancing);
+		color: $color-gold;
+		line-height: $line-height-1;
+	}
+
+	.sh-heading-v1-text {
+		@include font($size: $font-size-18);
+	}
+}
+
+/* Media Queries below 480px */
+@media (max-width: $screen-xs-min) {
+	.sh-heading-v1 {
+		.sh-heading-v1-title {
+			@include font($size: $font-size-36);
+		}
+	}
+}

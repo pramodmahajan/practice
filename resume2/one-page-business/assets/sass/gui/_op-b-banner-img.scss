@@ -1,0 +1,61 @@
+/*--------------------------------------------------
+    [Banner Image One Page Business v2]
+----------------------------------------------------*/
+
+.banner-img-op-b-v1 {
+	position: relative;
+	z-index: 1;
+    background: url(../../one-page/one-page-business/assets/img/1920x1080/06.jpg) no-repeat;
+    background-size: cover;
+	background-position: center center;
+
+    &:before {
+        @include position(absolute, $top: 0, $left: 0);
+        z-index: -1;
+        @include size(100%);
+        @include bg-opacity($color-dark, .9);
+        content: " ";
+    }
+}
+
+
+/*--------------------------------------------------
+    [Banner Image One Page Business v2]
+----------------------------------------------------*/
+
+.banner-img-op-b-v2 {
+    position: relative;
+    z-index: 1;
+    background: url(../../one-page/one-page-business/assets/img/1920x1080/05.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &:before {
+        @include position(absolute, $top: 0, $left: 0);
+        z-index: -1;
+        @include size(100%);
+        @include bg-opacity($color-dark, .2);
+        content: " ";
+    }
+}
+
+
+/*--------------------------------------------------
+    [Banner Image One Page Business v2]
+----------------------------------------------------*/
+
+.banner-img-op-b-v3 {
+    position: relative;
+    z-index: 1;
+    background: url(../../one-page/one-page-business/assets/img/1920x1080/07.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &:before {
+        @include position(absolute, $top: 0, $left: 0);
+        z-index: -1;
+        @include size(100%);
+        @include bg-opacity($color-dark, .95);
+        content: " ";
+    }
+}

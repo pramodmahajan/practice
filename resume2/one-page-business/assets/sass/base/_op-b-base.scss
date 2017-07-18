@@ -1,0 +1,81 @@
+/*------------------------------------------------------------------
+  	[The "base.scss" contains basic default element styles
+  		(colors, typography, margins & padding).]
+------------------------------------------------------------------*/
+
+p {
+    color: $color-dark-light;
+    line-height: 1.6;
+}
+
+a {
+    @include font($weight: $font-weight-300);
+    color: $color-green;
+
+    &:focus,
+    &:hover,
+    &:active {
+        color: $color-green;
+    }
+}
+
+em,
+li,
+li a {
+    color: $color-dark-light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include font($style: italic, $weight: $font-weight-400, $family: $font-family-lora);
+    line-height: 1.2;
+
+    > a {
+        @include font($style: italic, $weight: $font-weight-400, $family: $font-family-lora);
+        
+        &:hover {
+            color: $color-green;
+        }
+    }
+}
+
+/* Read More */
+.read-more-op-b {
+	position: relative;
+    @include font($size: $font-size-16, $style: italic, $weight: $font-weight-400, $family: $font-family-lora);
+    padding-bottom: 2px;
+    color: $color-dark;
+
+    &:before {
+        @include position(absolute, $bottom: 0, $left: 0);
+        @include size(0, 1px);
+        background: $color-dark;
+        content: " ";
+        @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+    }
+
+    &:hover,
+    &:focus {
+    	text-decoration: none;
+    }
+
+    &:hover {
+        color: $color-green;
+
+        &:before {
+            @include size(100%, 1px);
+        	background: $color-green;
+            @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+        }
+    }
+}
+
+/* Read More White */
+.read-more-op-b {
+    &.read-more-white-op-b {
+        color: $color-white;
+
+        &:before {
+            background: $color-white;
+        }
+    }
+}

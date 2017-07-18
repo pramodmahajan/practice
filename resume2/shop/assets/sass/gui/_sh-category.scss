@@ -1,0 +1,44 @@
+/*------------------------------------------------------------------
+    [Shop Category v1]
+------------------------------------------------------------------*/
+
+.sh-category-v1 {
+	.sh-category-v1-wrap {
+		padding: 0 0 15px 50px;
+	}
+
+	.sh-category-v1-dividers {
+		border-left: 1px solid darken($color-floral-white, 5%);
+		border-right: 1px solid darken($color-floral-white, 5%);
+	}
+
+	.sh-category-v1-title {
+		@include font($size: $font-size-32);
+		margin-bottom: 10px;
+	}
+
+	.sh-category-link {
+		@include font($size: $font-size-16);
+		border-bottom: 1px solid $color-gold;
+		text-decoration: none;
+		padding-bottom: 3px;
+	}
+}
+
+/* Media Queries below 768px */
+@media (max-width: $screen-sm-min) {
+	.sh-category-v1 {
+		.sh-category-v1-wrap {
+			padding: 50px 15px;
+		}
+
+		.sh-category-v1-dividers {
+			border-left: none;
+			border-right: none;
+			border-top: 1px solid darken($color-floral-white, 5%);
+			border-bottom: 1px solid darken($color-floral-white, 5%);
+		}
+	}
+}
+
+

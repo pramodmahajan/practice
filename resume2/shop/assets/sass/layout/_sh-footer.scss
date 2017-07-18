@@ -1,0 +1,51 @@
+/*------------------------------------------------------------------
+    [Shop Footer]
+------------------------------------------------------------------*/
+
+.sh-footer {
+	background: $color-black;
+
+    .sh-footer-divider {
+    	border-bottom: 1px solid rgba(255,255,255,.2);
+    }
+
+	.sh-footer-title {
+		@include font($size: $font-size-20);
+		color: $color-white;
+	}
+
+	.sh-footer-copyright {
+		@include font($size: $font-size-14);
+		color: $color-white;
+		opacity: .8;
+	}
+}
+
+/* List */
+.sh-footer {
+	.sh-footer-list {
+		margin-bottom: 0;
+	}
+
+	.sh-footer-list-item {
+		color: $color-white;
+		opacity: .8;
+		margin-bottom: 5px;
+
+		&.first-child {
+			padding-left: 0;
+		}
+	}
+
+	.sh-footer-list-link {
+		color: $color-white;
+		opacity: .8;
+	}
+}
+
+/* Logo */
+.sh-footer {
+	.sh-footer-logo {
+		@include size(120px, auto);
+	}
+}

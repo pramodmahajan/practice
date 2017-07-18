@@ -1,0 +1,84 @@
+/*------------------------------------------------------------------
+    [Shop Product v1]
+------------------------------------------------------------------*/
+
+.sh-product-v1 {
+	@include position(relative);
+	background: $color-floral-white;
+	overflow: hidden;
+
+	.sh-product-v1-title {
+		@include font($size: $font-size-26);
+		margin-bottom: 5px;
+	}
+
+	.sh-product-v1-price {
+		@include font($size: $font-size-20, $weight: $font-weight-400);
+		color: $color-gold;
+
+		+ .sh-product-v1-price {
+			margin-left: 7px;
+		}
+	}
+}
+
+/* Image */
+.sh-product-v1 {
+	.sh-product-v1-label {
+		@include position(absolute, $top: 15px, $right: 15px);
+		display: inline-block;
+		@include font($size: $font-size-18, $weight: $font-weight-400, $family: $font-family-dancing);
+		color: $color-white;
+		text-align: center;
+		padding: 5px 15px;
+	}
+
+	.sh-product-v1-img-wrap {
+		@include position(relative);
+		overflow: hidden;
+	}
+
+	.sh-product-v1-img-main {
+		@include transform-scale(1,1);
+		opacity: 1;
+		@include cubic-transition($delay: 0, $duration: 500ms, $property: (all));
+	}
+
+	.sh-product-v1-img-hover {
+		opacity: 0;
+		@include position(absolute, $top: 0);
+		@include translate3d(0,100%,0);
+		@include cubic-transition($delay: 0, $duration: 500ms, $property: (all));
+	}
+
+	.sh-product-v1-icon-overlay {
+		@include position(absolute, $top: 15px, $left: 15px);
+	}
+
+	&:hover {
+		.sh-product-v1-img-main {
+			opacity: 0;
+			@include transform-scale(0.5,0.5);
+			@include cubic-transition($delay: 0, $duration: 500ms, $property: (all));
+		}
+
+		.sh-product-v1-img-hover {
+			opacity: 1;
+			@include translate3d(0,0,0);
+			@include cubic-transition($delay: 0, $duration: 500ms, $property: (all));
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+    [Shop Product v2]
+------------------------------------------------------------------*/
+
+.sh-product-v2 {
+	position: relative;
+	background: $color-white;
+	padding-bottom: 5px;
+	box-shadow: 0 30px 25px -30px rgba(52,52,60,.5);
+}
+

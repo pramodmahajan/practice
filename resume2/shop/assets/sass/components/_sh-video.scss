@@ -1,0 +1,44 @@
+/*------------------------------------------------------------------
+    [Shop Video]
+------------------------------------------------------------------*/
+
+.sh-video {
+	display: inline-block;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+
+    .sh-video-play-icon {
+    	display: table-cell;
+    	@include size(60px);
+    	@include font($size: $font-size-34);
+		color: $color-white;
+    	text-align: center;
+    	background: transparent;
+    	vertical-align: middle;
+		border: 1px solid $color-white;
+		padding: 10px;
+		@include border-radius(3px);
+		@include transform-scale(1,1);
+		@include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+    }
+
+	.sh-video-text {
+		display: table-cell;
+		@include font($size: $font-size-32, $weight: $font-weight-400);
+		color: $color-white;
+    	vertical-align: middle;
+		padding: 0 15px;
+	}
+
+	&:hover {
+	    .sh-video-play-icon {
+	    	color: $color-gold;
+	    	background: $color-white;
+			@include border-radius(50%);
+			@include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+	    }
+	}
+}

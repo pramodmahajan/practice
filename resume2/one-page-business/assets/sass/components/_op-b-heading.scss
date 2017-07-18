@@ -1,0 +1,75 @@
+/*------------------------------------------------------------------
+    [Title One Page Business v1]
+------------------------------------------------------------------*/
+
+.heading-op-b-v1 {
+    .heading-op-b-v1-title {
+        @include font($size: $font-size-50);
+    }
+
+    .heading-op-b-v1-text {
+        @include font($size: $font-size-18);
+    }
+}
+
+/* White Version */
+.heading-op-b-v1 {
+    &.heading-op-b-v1-white {
+        .heading-op-b-v1-title,
+        .heading-op-b-v1-text {
+            color: $color-white;
+        }
+
+        .heading-op-b-v1-text {
+            opacity: .8;
+        }
+    }
+}
+
+/* Media Queries below 768px */
+@media (max-width: $screen-sm-min) {
+    .heading-op-b-v1 {
+        .heading-op-b-v1-title {
+            @include font($size: $font-size-36);
+        }
+
+        .heading-op-b-v1-text {
+            @include font($size: $font-size-18);
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Heading One Page Business v2]
+------------------------------------------------------------------*/
+
+.heading-op-b-v2 {
+    .heading-op-b-v2-subtitle {
+        @include font($size: $font-size-22);
+        margin-bottom: 10px;
+    }
+
+    .heading-op-b-v2-title {
+        @include font($size: $font-size-36);
+    }
+}
+
+/* White Version */
+.heading-op-b-v2 {
+    &.heading-op-b-v2-white {
+        .heading-op-b-v2-title,
+        .heading-op-b-v2-text {
+            color: $color-white;
+        }
+    }
+}
+
+/* Media Queries below 480px */
+@media (max-width: $screen-xs-min) {
+    .heading-op-b-v2 {
+        .heading-op-b-v2-title {
+            @include font($size: $font-size-30);
+        }
+    }
+}

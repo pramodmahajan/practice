@@ -1,0 +1,55 @@
+/*--------------------------------------------------
+    [Shop Tab]
+----------------------------------------------------*/
+
+.sh-tab {
+    .nav-tabs {
+        width: 100%;
+        display: inline-block;
+        border-bottom: none;
+
+        > li {
+            width: 50%;
+            margin: 0;
+
+            > a {
+                @include font($size: $font-size-16);
+                color: $color-dark;
+                text-align: center;
+                border-radius: 0;
+                border-color: #f5efe2;
+                padding: 10px;
+                margin-right: 0;
+            }
+
+            &:active,
+            &:focus,
+            &:hover {
+                > a {
+                    background: inherit;
+                }
+            }
+
+            &:hover {
+                > a {
+                    color: $color-gold;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $color-gold;
+                    background: $color-floral-white;
+                    border-color: $color-gold;
+                }
+            }
+        }
+
+    }
+
+    .tab-pane {
+        @include font($size: $font-size-16);
+        color: $color-subtitle;
+        margin-top: 20px;
+    }
+}

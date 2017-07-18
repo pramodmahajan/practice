@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------
+    [Blog One Page Business]
+------------------------------------------------------------------*/
+
+.blog-op-b {
+	background: $color-white;
+	border-right: 1px solid $color-tint-light;
+	padding: 50px 40px;
+
+	.blog-op-b-title {
+		@include font($size: $font-size-26);
+		margin-bottom: 30px;
+	}
+
+	.blog-op-b-title-link {
+		&:hover {
+			color: inherit;
+		}
+	}
+}
+

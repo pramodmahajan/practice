@@ -1,0 +1,72 @@
+/*--------------------------------------------------
+    [Team One Page Business]
+----------------------------------------------------*/
+
+.team-op-b {
+	text-align: center;
+
+	.team-op-b-wrap {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.team-op-b-media {
+		@include translate3d(0,0,0);
+		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	}
+
+	.team-op-b-member {
+		@include position(absolute, $bottom: 0, $left: 0, $right: 0);
+		@include size(100%, auto);
+		padding: 20px;
+		@include gradient(rgba(52,52,60,0), rgba(52,52,60,1));
+	}
+
+	.team-op-b-name {
+		@include font($size: $font-size-24);
+		color: $color-white;
+		margin-bottom: 5px;
+	}
+
+	.team-op-b-position {
+		@include font($size: $font-size-16, $weight: $font-weight-300);
+		color: $color-white;
+	}
+
+	.team-op-b-social {
+		@include position(absolute, $bottom: 0, $left: 0, $right: 0);
+		@include size(100%, auto);
+		background: $color-dark;
+		padding: 20px 0;
+		margin-bottom: 0;
+		@include translate3d(0,74px,0);
+		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+		.team-op-b-social-item {
+			padding: 0 10px;
+		}
+
+		.team-op-b-social-link {
+			@include font($size: $font-size-24);
+			color: $color-white;
+			text-decoration: none;
+			opacity: .8;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	&:hover {
+		.team-op-b-media {
+			@include translate3d(0,-74px,0);
+			@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+		}
+
+		.team-op-b-social {
+			@include translate3d(0,0,0);
+			@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));	
+		}
+	}
+}

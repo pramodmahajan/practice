@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------
+    [Landing Download]
+------------------------------------------------------------------*/
+
+.l-download {
+	text-align: center;
+	padding: 30px;
+
+	.l-download-icon {
+		display: block;
+		@include font($size: $font-size-100);
+		margin-bottom: 40px;
+	}
+
+	.l-download-title {
+		@include font($size: $font-size-26);
+	}
+
+	.l-download-text {
+		opacity: .8;
+	}
+}
+
+/* Background Color */
+.l-download-bg {
+	background: #4c4c61;
+	
+	.l-download {
+		.l-download-icon,
+		.l-download-title,
+		.l-download-text {
+			color: $color-white;
+		}
+	}
+}
+

@@ -1,0 +1,441 @@
+/*------------------------------------------------------------------
+    [Blue Grey Color Theme]
+------------------------------------------------------------------ */
+
+a {
+    color: $color-blue-grey;
+
+    &:focus,
+    &:hover,
+    &:active {
+        color: $color-blue-grey;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    > a {
+
+        &:hover {
+            color: $color-blue-grey;
+        }
+    }
+}
+
+/* Read More */
+.read-more-op-b {
+    &:hover {
+        color: $color-blue-grey;
+
+        &:before {
+            background: $color-blue-grey;
+        }
+    }
+}
+
+/* Read More White */
+.read-more-op-b {
+    &.read-more-white-op-b {
+        color: $color-white;
+
+        &:before {
+            background: $color-white;
+        }
+    }
+}
+
+/* Navbar Toggle */
+.op-b-header {
+    .navbar-toggle {
+        &:hover {
+            .icon-bar {
+                background: $color-blue-grey;
+            }
+        }
+    }
+}
+
+/* Language */
+.op-b-header {
+    .nav-language-list {
+        border-color: rgba(84, 110, 122, .2);
+    }
+
+    .nav-language-list-link {
+        color: $color-blue-grey;
+        @include bg-opacity($color-blue-grey, 0);
+
+        &:hover {
+            @include bg-opacity($color-blue-grey, .1);
+        }
+
+        &.active {
+            @include bg-opacity($color-blue-grey, .4);
+        }
+    }
+}
+
+/* Nav */
+.op-b-header {
+    .nav-item {
+        .nav-item-child {
+            &:hover,
+            &:focus {
+                color: $color-blue-grey;
+
+                &:before {
+                    background: $color-blue-grey;
+                }
+            }
+        }
+        
+        &.active {
+            .nav-item-child {
+                color: $color-blue-grey;
+
+                &:before {
+                    background: $color-blue-grey;
+                }
+
+                &:hover,
+                &:focus {
+                    color: $color-blue-grey;
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries below 991px */
+@media (max-width: $screen-sm-max) {
+    /* Bootstrap collapse of navigation with a maximum width: 991px
+    (Change it to any breakpoint you want to be collapsed) */
+    .op-b-header {
+        .nav-language-list {
+            border-color: rgba(84, 110, 122, .4);
+        }
+
+        .nav-language-list-link {
+            color: $color-blue-grey;
+
+            &:hover {
+                @include bg-opacity($color-blue-grey, .5);
+            }
+
+
+            &.active {
+                @include bg-opacity($color-blue-grey, .6);
+            }
+        }
+    }
+
+    /* Nav */
+    .op-b-header {
+        .nav-item {
+            .nav-item-child {
+                &:hover {
+                    color: $color-blue-grey;
+                }
+            }
+
+            &.active {
+                .nav-item-child {
+                    color: $color-blue-grey;
+
+                    &:before {
+                        background: $color-blue-grey;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $color-blue-grey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Navbar Logo */
+    .header-shrink {
+        &.op-b-header {
+            .nav-item {
+                .nav-item-child {
+                    &:hover,
+                    &:focus {
+                        color: $color-blue-grey;
+
+                        &:before {
+                            background: $color-blue-grey;
+                        }
+                    }
+                }
+
+                &.active {
+                    .nav-item-child {
+                        color: $color-blue-grey;
+
+                        &:before {
+                            background: $color-blue-grey;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $color-blue-grey;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.op-b-header {
+            .nav-language-list {
+                border-color: rgba(84, 110, 122, .4);
+            }
+
+            .nav-language-list-link {
+                color: $color-blue-grey;
+
+                &:hover {
+                    @include bg-opacity($color-blue-grey, .5);
+                }
+
+                &.active {
+                    @include bg-opacity($color-blue-grey, .6);
+                }
+            }
+        }
+    }
+}
+
+
+/* Header One Page Business White Semi Transparent */
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Shrink Language */
+    .header-shrink {
+        &.op-b-header {
+            &.op-b-header-white-semi-transprent {
+                .nav-language-list-link {
+                    color: $color-blue-grey;
+                }
+            }
+        }
+    }
+}
+
+
+/* Header One Page Business Dark Semi Transparent */
+
+/* Language */
+.op-b-header {
+    &.op-b-header-dark-semi-transprent {
+        .nav-language-list {
+            border-color: rgba(84, 110, 122, 0.4);
+        }
+
+        .nav-language-list-link {
+            &.active {
+                @include bg-opacity($color-blue-grey, .4);
+            }
+        }
+    }
+}
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Shrink Language */
+    .header-shrink {
+        &.op-b-header {
+            &.op-b-header-dark-semi-transprent {
+                .nav-language-list-link {
+                    color: $color-blue-grey;
+
+                    &.active {
+                        @include bg-opacity($color-blue-grey, .4);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Header One Page Business White */
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Shrink Nav */
+    .header-shrink {
+        &.op-b-header {
+            &.op-b-header-white {
+                .nav-item {
+                    .nav-item-child {
+                        &:hover {
+                            color: $color-blue-grey;
+
+                            &:before {
+                                background: $color-blue-grey;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        .nav-item-child {
+                            color: $color-blue-grey;
+
+                            &:before {
+                                background: $color-blue-grey;
+                            }
+
+                            &:hover {
+                                color: $color-blue-grey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Shrink Language */
+    .header-shrink {
+        &.op-b-header {
+            &.op-b-header-white {
+                .nav-language-list {
+                    border-color: rgba(84, 110, 122, .4);
+                }
+
+                .nav-language-list-link {
+                    color: $color-blue-grey;
+
+                    &.active {
+                        @include bg-opacity($color-blue-grey, .4);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Buttons Dropdown Default */
+.btn-dropdown-group {
+    &.open {
+        .btn-dropdown-toggle {
+            background: $color-blue-grey;
+        }
+    }
+
+    &:hover {
+        .btn-dropdown-toggle {
+            background: $color-blue-grey;
+        }
+    }
+}
+
+/* Button Base Color */
+.btn-green {
+    @include buttons($color-blue-grey, $color-white, transparent, $color-blue-grey, 1px, transparent, $color-blue-grey);
+
+    .btn-base-element-xs {
+        @include buttons-element(transparent, darken($color-blue-grey, 4%), 4px 9px);
+    }
+
+    .btn-base-element-sm {
+        @include buttons-element(transparent, darken($color-blue-grey, 4%), 7px 11px);
+    }
+
+    .btn-base-element-md {
+        @include buttons-element(transparent, darken($color-blue-grey, 4%), 8px 13px);
+    }
+
+    .btn-base-element-lg {
+        @include buttons-element(transparent, darken($color-blue-grey, 4%), 10px 15px);
+    }
+}
+
+/* Buttons Border Base Color */
+.btn-green-brd {
+    @include buttons($color-blue-grey, $color-white, transparent, $color-blue-grey, 1px, $color-blue-grey, $color-blue-grey);
+
+    .btn-base-element-xs {
+        @include buttons-element(transparent, darken($color-blue-grey, 4%), 4px 9px);
+    }
+
+    .btn-base-element-sm {
+        @include buttons-element(transparent, darken($color-blue-grey, 4%), 7px 11px);
+    }
+
+    .btn-base-element-md {
+        @include buttons-element(transparent, darken($color-blue-grey, 4%), 8px 13px);
+    }
+
+    .btn-base-element-lg {
+        @include buttons-element(transparent, darken($color-blue-grey, 4%), 10px 15px);
+    }
+}
+
+/* Button Background Base Color */
+.btn-green-bg {
+    @include buttons($color-white, $color-white, $color-blue-grey, $color-blue-grey-light, 1px, transparent, transparent);
+
+    .btn-base-element-xs {
+        @include buttons-element(darken($color-blue-grey, 4%), transparent, 4px 9px);
+    }
+
+    .btn-base-element-sm {
+        @include buttons-element(darken($color-blue-grey, 4%), transparent, 7px 11px);
+    }
+
+    .btn-base-element-md {
+        @include buttons-element(darken($color-blue-grey, 4%), transparent, 8px 13px);
+    }
+
+    .btn-base-element-lg {
+        @include buttons-element(darken($color-blue-grey, 4%), transparent, 11px 15px);
+    }
+}
+
+/* Background Color Green */
+.bg-color-green {
+    background: $color-blue-grey !important;
+}
+
+
+/* Promo Block One Page Business v4 */
+.op-b-promo-b-v4 {
+    .op-b-promo-b-v4-no {
+        color: $color-blue-grey;
+    }
+}
+
+/* Promo Block One Page Business v6 */
+.op-b-promo-b-v6 {
+    .op-b-promo-b-v6-media-player {
+        &:hover {
+            background: $color-blue-grey;
+        }
+    }
+}
+
+/* Promo Block One Page Business v9 */
+.op-b-promo-b-v9 {
+    .op-b-promo-b-v9-subtitle {
+        color: $color-blue-grey;
+    }
+}
+
+/* Promo Block One Page Business v13 */
+.op-b-promo-b-v13 {
+    .op-b-promo-b-v13-title {
+        color: $color-blue-grey;
+    }
+
+    .op-b-promo-b-v13-icon {
+        &:hover {
+            background: $color-blue-grey !important;
+        }
+    }
+}

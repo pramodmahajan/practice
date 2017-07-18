@@ -1,0 +1,37 @@
+/*--------------------------------------------------
+    [Counters One Page Business]
+----------------------------------------------------*/
+
+.counters-op-b {
+	text-align: center;
+
+	.counters-op-b-icon,
+	.counters-op-b-icon-overlay,
+	.counters-op-b-no,
+	.counters-op-b-title {
+		color: $color-white;
+	}
+
+	.counters-op-b-icon {
+		display: block;
+		@include font($size: $font-size-36);
+		margin-bottom: 20px;
+	}
+
+	.counters-op-b-icon-overlay {
+		@include position(absolute, $top: -15px, $left: 70px);
+		@include font($size: $font-size-50);
+		opacity: .5;
+	}
+
+	.counters-op-b-no {
+		@include font($size: $font-size-50, $weight: $font-weight-500);
+		margin-bottom: 10px;
+	}
+
+	.counters-op-b-title {
+		@include font($size: $font-size-24);
+		margin-bottom: 0;
+	}
+}
+

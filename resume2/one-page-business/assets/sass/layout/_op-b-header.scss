@@ -1,0 +1,537 @@
+/*--------------------------------------------------
+    [Header One Page Business]
+----------------------------------------------------*/
+
+.header-op-b {
+    border-bottom: 1px solid transparent;
+    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+}
+
+/* Header Fixed */
+.header-op-b {
+    &.header-fixed {
+        position: relative;
+    }
+}
+
+/* Navbar */
+.header-op-b {
+    .navbar {
+        @include bg-opacity($color-white, 0);
+        border: none;
+        border-radius: 0;
+        margin-bottom: 0;
+        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+    }
+}
+
+/* Navbar Toggle */
+.header-op-b {
+    .navbar-toggle {
+        @include size(20px);
+        float: left;
+        border: none;
+        padding: 0;
+        margin: 35px 0;
+
+        .icon-bar {
+            @include size(20px, 1px);
+            background: $color-dark;
+        }
+
+        &:focus,
+        &:hover {
+            background: transparent;
+        }
+
+        &:hover {
+            .icon-bar {
+                background: $color-green;
+            }
+        }
+    }
+}
+
+/* Navbar Actions */
+.header-op-b {
+    .navbar-actions {
+        float: right;
+    }
+}
+
+/* Language */
+.header-op-b {
+    .nav-language {
+        line-height: 70px;
+        margin: 30px 5px;
+        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+    }
+
+    .nav-language-list {
+        line-height: $line-height-base;
+        border: 1px solid rgba(255,255,255,.7);
+        @include border-radius(50px);
+        margin-bottom: 0;
+        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+    }
+
+    .nav-language-list-item {
+        padding: 0;
+        margin-left: -4px;
+        
+        &:first-child {
+            margin-left: 0;
+
+            .nav-language-list-link {
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+            }
+        }
+
+        &:last-child {
+            .nav-language-list-link {
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+        }
+    }
+
+    .nav-language-list-link {
+        @include font($size: $font-size-13, $weight: $font-weight-400, $style: italic, $family: $font-family-lora);
+        display: inline-block;
+        min-width: 30px;
+        color: $color-white;
+        text-decoration: none;
+        @include bg-opacity($color-white, 0);
+        padding: 5px 10px;
+        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+        &:hover {
+            @include bg-opacity($color-white, .1);
+        }
+
+
+        &.active {
+            @include bg-opacity($color-white, .2);
+        }
+    }
+}
+
+/* Navbar Logo */
+.header-op-b {
+    .navbar-logo {
+        @include size(100px);
+        float: left;
+        max-height: 90px;
+        line-height: 60px;
+        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+        .navbar-logo-wrap {
+            display: inline-block;
+            padding: 15px 0;
+
+            &:focus,
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .navbar-logo-img {
+            display: inline-block;
+            @include size(85px, auto);
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+            @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+            &.navbar-logo-img-white {
+                display: inline-block;
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            }
+            &.navbar-logo-img-dark {
+                display: none;
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            }
+        }
+    }
+}
+
+/* Nav */
+.header-op-b {
+    .nav-item {
+        @include font($size: $font-size-18, $weight: $font-weight-400, $style: italic, $family: $font-family-lora);
+        
+        .nav-item-child {
+            position: relative;
+            @include font($size: $font-size-18, $weight: $font-weight-400, $style: italic, $family: $font-family-lora);
+            color: $color-white;
+            background: transparent;
+            padding: 5px 0;
+            @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+            &:before {
+                @include position(absolute, $bottom: 0, $left: 0);
+                @include size(0, 1px);
+                background: $color-white;
+                content: " ";
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            }
+
+            &:hover,
+            &:focus {
+                color: $color-white;
+                background: transparent;
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            }
+        }
+        
+        &.active {
+            .nav-item-child {
+                color: $color-white;
+                background: transparent;
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+                &:before {
+                    @include position(absolute, $bottom: 0, $left: 0);
+                    @include size(100%, 1px);
+                }
+
+                &:hover,
+                &:focus {
+                    color: $color-white;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries below 991px */
+@media (max-width: $screen-sm-max) {
+    /* Bootstrap collapse of navigation with a maximum width: 991px
+    (Change it to any breakpoint you want to be collapsed) */
+    .header-op-b {
+        .navbar-toggle {
+            display: block;
+        }
+
+        .navbar-collapse {
+            border-top: 1px solid $color-sky-light;
+
+            &.collapse {
+                display: none !important;
+
+                &.in {
+                    display: block !important;
+                    overflow-y: auto !important;
+                }
+            }
+        }
+
+        .navbar-nav {
+            margin: 20px 0;
+            float: none;
+
+            .nav-item {
+                float: none;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    /* Navbar Fixed Top */
+    .header-op-b {
+        &.navbar-fixed-top,
+        &.navbar-fixed-top-boxed {
+            position: relative;
+
+            .nav-collapse {
+                max-height: none;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    /* Navbar */
+    .header-op-b {
+        .navbar {
+            @include bg-opacity($color-white, 1);
+        }
+    }
+
+    /* Menu Container */
+    .header-op-b {
+        .menu-container {
+            @include clearfix;
+        }
+    }
+
+    /* Language */
+    .header-op-b {
+        .nav-language {
+            line-height: 60px;
+        }
+
+        .nav-language-list {
+            border-color: rgba(88,201,185,.5);
+        }
+
+        .nav-language-list-link {
+            color: $color-green;
+
+            &:hover {
+                color: $color-white;
+                @include bg-opacity($color-green, .5);
+            }
+
+
+            &.active {
+                color: $color-white;
+                @include bg-opacity($color-green, .6);
+            }
+        }
+    }
+
+    /* Navbar Logo */
+    .header-op-b {
+        .navbar-logo {
+            @include size(auto, 100%);
+            display: block;
+            float: none;
+            text-align: center;
+            margin: 0 70px;
+            
+            .navbar-logo-img {
+                &.navbar-logo-img-white {
+                    display: none;
+                    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                }
+                &.navbar-logo-img-dark {
+                    display: inline-block;
+                    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                }
+            }
+        }
+    }
+
+    /* Nav */
+    .header-op-b {
+        .nav-item {
+            color: $color-dark;
+
+            .nav-item-child {
+                display: inline-block;
+                color: $color-dark;
+
+                &:hover {
+                    color: $color-green;
+                }
+            }
+
+            &.active {
+                .nav-item-child {
+                    color: $color-green;
+
+                    &:before {
+                        background: $color-green;
+                        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                    }
+                    
+                    &:hover,
+                    &:focus {
+                        color: $color-green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries below 767px */
+@media (max-width: $screen-xs-max) {
+    /* Menu Container */
+    .header-op-b {
+        .menu-container {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .navbar {
+            > .container {
+                width: auto;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: 0;
+                margin-right: 0;
+
+                > .nav-collapse {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Header Shrink */
+    .header-shrink {
+        &.header-op-b {
+            border-bottom-color: $color-sky-light;
+            @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+            .navbar {
+                @include bg-opacity($color-white, 1);
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            }
+        }
+
+        /* Navbar Logo */
+        &.header-op-b {
+            .navbar-logo {
+                max-height: 70px;
+                line-height: 35px;
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+                .navbar-logo-wrap {
+                    padding: 13px 0;
+                }
+
+                .navbar-logo-img {
+                    &.navbar-logo-img-white {
+                        display: none;
+                        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                    }
+                    &.navbar-logo-img-dark {
+                        display: inline-block;
+                        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                    }
+                }
+            }
+        }
+
+        /* Nav Item */
+        &.header-op-b {
+            .nav-item {
+                line-height: 60px;
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+                .nav-item-child {
+                    color: $color-dark;
+                    margin: 20px 15px;
+                    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+                    &:before {
+                        background: $color-dark;
+                        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $color-green;
+                    }
+                }
+
+                &.active {
+                    .nav-item-child {
+                        color: $color-green;
+                        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+                        &:before {
+                            background: $color-green;
+                            @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $color-green;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Language */
+        &.header-op-b {
+            .nav-language {
+                line-height: 35px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            }
+
+            .nav-language-list {
+                border-color: rgba(88,201,185,.5);
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            }
+
+            .nav-language-list-link {
+                color: $color-green;
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+                &:hover {
+                    color: $color-white;
+                    @include bg-opacity($color-green, .5);
+                }
+
+                &.active {
+                    color: $color-white;
+                    @include bg-opacity($color-green, .6);
+                }
+            }
+        }
+    }
+
+    /* Navbar */
+    .header-op-b {
+        .navbar-nav {
+            float: right;
+        }
+        
+        .nav-item {
+            line-height: 70px;
+            @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+        }
+
+        .nav-item-child {
+            margin: 30px 15px;
+            @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+        }
+    }
+}
+
+
+/*--------------------------------------------------
+    [Header One Page Business Semi Transparent]
+----------------------------------------------------*/
+
+.header-op-b {
+    &.header-op-b-semi-transprent {
+        .navbar {
+            @include bg-opacity($color-white, .2);
+        }
+    }
+}
+
+
+/*--------------------------------------------------
+    [Header One Page Business Center]
+----------------------------------------------------*/
+
+.header-op-b {
+    &.header-op-b-center {
+        .navbar-collapse {
+            text-align: center;
+        }
+
+        .navbar-nav {
+            float: none;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}

@@ -38,6 +38,3 @@ var Animsition = function() {
     }
 }();
 
-$(document).ready(function() {
-   Animsition.init();
-});
